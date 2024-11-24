@@ -137,8 +137,6 @@ body{
 }
 .articles__image img{
     width: 100%;
-    border-radius: 10px;
-}
 }
 .articles__button{
     display: flex;
