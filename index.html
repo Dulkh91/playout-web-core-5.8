@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>grid</title>
+        <link rel="stylesheet" href="/style.css">
+        <link href='http://fonts.googleapis.com/css?family=Roboto'
+            rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <nav class="navBar">
+            <!-- Mobile -->
+            <div class="navBar--mobile">
+                <ul class="mobile--items">
+                    <li><img src="/image/burger.jpg" alt></li>
+                    <li><img src="/image/Group.jpg" alt></li>
+                    <!-- seperate  bar-->
+                    <li class="navBar--mobile__line"></li>
+                    <li><img src="/image/repair.jpg" alt></li>
+                    <li><img src="/image/checkstatus.png" alt></li>
+                </ul>
+                <!-- tablet -->
+                <div class="tablet">
+                    <ul class="tablet--items__start">
+                        <li><img src="/image/burger.jpg" alt></li>
+                        <!-- seperate  bar-->
+                        <li class="navBar--mobile__line"></li>
+                        <li><img src="/image/Group.jpg" alt></li>
+                    </ul>
+                    <ul class="tablet--items__end">
+                        <li><img src="/image/call.png" alt></li>
+                        <li><img src="/image/chat.png" alt></li>
+                        <li><img src="/image/profile.png" alt></li>
+                        <!-- seperate  bar-->
+                        <li class="navBar--mobile__line"></li>
+                        <li><img src="/image/repair.jpg" alt></li>
+                        <li><img src="/image/checkstatus.png" alt></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Destop -->
+        <section id="main-article">
+            <div class="mainHead">
+                <!-- text header -->
+                <div class="header">
+                    <div class="header--bar"></div>
+                    <h1 class="header--text">Service</h1>
+                </div>
+                <!-- image nav -->
+                <div class="navMenu">
+                    <div class="navMenu__card">
+                        <h2 class="navMenu__card--text">Submit a Request</h2>
+                        <img src="/image/repair.jpg" alt>
+                    </div>
+                    <div class="navMenu__card">
+                        <h2 class="navMenu__card--text">Repair Status</h2>
+                        <img src="/image/checkstatus.png" alt>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu">
+            <!-- Mobile -->
+            <div class="menu__mobile">
+                <input type="text" class="menu__mobile--input">
+            </div>
+
+            <!-- tablete -->
+            <div class="menu__tablete">
+                <input type="text" class="menu__mobile--input">
+                <button>Additional Sevices</button>
+                <button>Service Prices</button>
+                <button>Specail Prices</button>
+            </div>
+            <!-- destop -->
+            <div class="menu__destop">
+                <input type="text" class="menu__mobile--input">
+                <button>Repairable Devices</button>
+                <button>Service Prices</button>
+                <button>Service Center Location</button>
+                <button>Specail Prices</button>
+                <button>Reviews</button>
+            </div>
+        </section>
+
+        <main class="articles">
+            <div class="articles__text">
+                <p>We are an authorized service center for Dell equipment repair.
+                    Only with us can you repair your Dell laptop with the official manufacturer's warranty.
+                </p>
+                <p>We have been operating successfully since 1992 and have earned a reputation as a reliable partner.<span>
+                    We take pride in the fact that people come to us based on recommendations and, in turn, recommend us to their family and friends.</span></p>
+
+                <button class="articles__button">
+                    <img src="image/expand.png" alt="">Read more
+                </button>
+            </div>
+            <div class="articles__image">
+                <img src="image/Picture Copy.jpg" alt="">
+            </div>
+        </main>
+
+    </body>
+</html>
