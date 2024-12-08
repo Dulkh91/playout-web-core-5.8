@@ -14,7 +14,7 @@ body{
  list-style-type: none; 
  display: flex;
  justify-content: space-between;
- padding: 18px;
+ padding: 15px;
 }
 
 .navBar--mobile__line{
@@ -77,13 +77,14 @@ body{
 .menu{
     margin: 30px 16px;
 }
-.menu__mobile--input{
-    border: 2px solid #B8FFEC;
-    outline: none;
-    padding: 8px;
-    border-radius: 10px;
+.menu__destop button:first-child,
+.menu__tablete button:first-child{
     font-size: 16px;
-   
+    background-color: #ffffff;
+    border: 2px solid #B8FFEC;
+    padding: 10px 10rem 10px 10px;
+    border-radius: 8px;
+
 }
 /* menu Destop */
 .menu__tablete{
@@ -91,6 +92,8 @@ body{
     justify-content: space-between;
     align-items: center;
 }
+
+
 .menu__destop{
    flex-wrap: wrap;
     align-items: center;
@@ -155,24 +158,37 @@ body{
     /* tablete and Destop none show */
     .tablet, 
     .navMenu,
-    .menu__tablete,
     .menu__destop,
     .articles__text p:nth-of-type(2)
     {
         display: none;
-    }
-    .menu__mobile--input{
-        width: 80%;
     }
     .articles__text,
     .articles__image{
         width: 100%;
         float: none;
     }
+    .articles__text p{
+        margin: 10px;
+    }
     .articles__image img{
         border-radius: unset;
     }
-    
+    .menu__tablete{
+        overflow: auto;
+        scrollbar-width: none; /* chrom */
+    }
+    .menu__tablete::-webkit-scrollbar{
+        display: none; /*Safari */
+    }
+    .menu__tablete button{
+        width: 15rem;
+       white-space: nowrap;
+        margin: 20px;
+    }
+    .articles__button{
+        margin-top: 40px;
+    }
 }
 
 /* media tablete */
@@ -181,12 +197,12 @@ and (max-width: 1119px){
     /* phone and destop none show */
     .mobile--items, 
     .navMenu,
-    .menu__mobile,
     .menu__destop,
     .articles__text span
     {
         display: none;
     }
+
     
 
 }
@@ -195,13 +211,8 @@ and (max-width: 1119px){
     /* phone and tablet non show */
     .mobile--items,
     .tablet,
-    .menu__mobile,
     .menu__tablete{
         display: none;
-    }
-    
-    .menu__mobile--input{
-        width: 30%;
     }
 }
 
